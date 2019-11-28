@@ -82,5 +82,11 @@ public class TenisPersonalizado extends Tenis {
 	public void setTecido(Tecido tecido) {
 		this.tecido = tecido;
 	}
+	
+	@Override
+	public String getNome() {
+		
+		return null;
+	}
 
 }
