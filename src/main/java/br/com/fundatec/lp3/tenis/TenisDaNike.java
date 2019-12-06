@@ -14,8 +14,9 @@ public class TenisDaNike extends Tenis {
 			Builder builder = TenisPersonalizado.builder();
 
 			TenisPersonalizado tenis;
+			//Escolhi a borrecha e o tecido
 			tenis = builder.comBorracha(Borracha.GROSSA).comTecido(Tecido.ALGODAO).build();
-
+			//Mostrando um texto com a borracha e o tecido escolhido
 			System.out.println("Sendo fabricado um tenis da NIKE:");
 			System.out.println("Tecido: " + tenis.getTecido());
 			System.out.println("Borracha: " + tenis.getBorracha());
@@ -25,6 +26,7 @@ public class TenisDaNike extends Tenis {
 		}
 	}
 
+	//Fiz uma motodo expecifico para cada tipo de tenis 
 	@Override
 	public void costurar() {
 		System.out.println("Costurando de fora para dentro");
@@ -40,6 +42,7 @@ public class TenisDaNike extends Tenis {
 		System.out.println("embalando em caixa de plastico");
 	}
 
+	//Retorna uma string com o nome do tenis
 	@Override
 	public String getNome() {
 		

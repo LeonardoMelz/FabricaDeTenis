@@ -27,7 +27,7 @@ public class TenisDaFila extends Tenis {
 	
 	}
 		
-		
+		//Fiz uma motodo expecifico para cada tipo de tenis 
 		@Override
 		public void costurar() {
 			System.out.println("Costurando de dentro pra fora");
@@ -43,6 +43,7 @@ public class TenisDaFila extends Tenis {
 			System.out.println("embalando em caixa de papelão");
 		}
 		
+		//Retorna uma string com o nome do tenis
 		@Override
 		public String getNome() {
 			

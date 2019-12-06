@@ -9,23 +9,26 @@ public class App {
 	public static void main(String[] args) {
 
 	
-
+		//Chamo a classe do tenis q eu quero
 		Tenis tenisDaAdidas = new TenisDaAdidas();
+		Tenis tenisDaNike = new TenisDaNike();
+		Tenis tenisDaFila = new TenisDaFila();
+		
+		//O executa passa como parametro o tenis que eu quero executar
+		//Isso vai mostrar o estilo e os materias que vão ser usados 
 		executa(tenisDaAdidas);
 		System.out.println("\n");
-
-		Tenis tenisDaNike = new TenisDaNike();
 		executa(tenisDaNike);
 		System.out.println("\n");
-		
-		Tenis tenisDaFila = new TenisDaFila();
 		executa(tenisDaFila);
 		System.out.println("\n");
 	
 
 
 	}
-
+	//Isso vai traser os metodos da classe tenis
+	//Mas os metodos vão vir de acordo com o que foi botado em cada classe em expecifico 
+	
 	private static void executa(Tenis tenis) {
 		System.out.print(tenis.getNome() + ": ");
         tenis.colocarCadarços();
